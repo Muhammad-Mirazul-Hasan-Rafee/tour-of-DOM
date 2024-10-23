@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <style>
+        li{
+            color: rgb(22, 15, 32);
+        }
+        #fruit-title{
+            color: rgb(44, 84, 94);
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to DOM</header>
+    <main>
+        <h1>It's time to have DOM!</h1>
+        <ul>
+            <li>DOM</li>
+            <li>Javascript</li>
+            <li>Range Rover</li>
+        </ul>
+    </main>
+
+    <section>
+        <h1 id="fruit-title">Food I like</h1>
+        <ul>
+            <li>Juice</li>
+            <li>Fry</li>
+            <li>Pizza</li>
+            <li>Roast</li>
+        </ul>
+    </section>
+    <script src="js/hello.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+    </script>
+</body>
+</html>
